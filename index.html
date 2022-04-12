@@ -2,47 +2,138 @@
 <html>
 
 <head>
-    <title></title>
+        <title></title>
+        <style>
+                table,
+                tr,
+                th,
+                td {
+                        border: 1px solid black;
+                }
+                p,strong{
+                        font-size: 20px;
+                }
+        </style>
 </head>
 
 <body>
-    <pre>
-        <strong> What is React? What are its features.</strong>
+        <div>
+                <strong> What is React? What are its features.</strong>
 
-             React  is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications.
-             React allows developers to create large web applications that can change data, without reloading the page.
-             It's used for handling the view layer for web and mobile apps.
+                <p>React is an open-source JavaScript library that is used for building user interfaces specifically for
+                        single-page applications.
+                        React allows developers to create large web applications that can change data, without reloading
+                        the page.
+                        It's used for handling the view layer for web and mobile apps.</p>
+                <p>
+                        Its features:-
+                        Virtual DOM- This characteristic of React helps to speed up the app development process and
+                        offers flexibility.
+                        Single Page Application,
+                        Component structure,
+                        JSX- Writing HTML inside JS, because in React we write HTML CSS and JS in same file , unlike
+                        Angular,
+                        Good community support,
+                        React Native,
+                        Easy Learning Curve.</p>
 
-                Its features:-
-                Virtual DOM- This characteristic of React helps to speed up the app development process and offers flexibility.
-                Single Page Application.
-                Component structure.
-                JSX- Writing HTML inside JS, because in React we write HTML CSS and JS in same file , unlike Angular.
-                Good community support :
-                React Native.
-                Easy Learning Curve.
 
+                <strong> What is the Virtual DOM?</strong>
 
-        <strong> What is the Virtual DOM?</strong>       
+                <p>DOM-DOM is a document object model, created by converting HTML CSS and JS Real DOM
+                        The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”,
+                        representation of a UI is kept in memory and
+                        synced with the “real” DOM by a library such as ReactDOM.
+                        This process is called reconciliation.</p>
 
-                DOM-DOM is a document object model, created by converting HTML CSS and JS Real DOM
-                The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”,
-                 representation of a UI is kept in memory and 
-                synced with the “real” DOM by a library such as ReactDOM.
-                 This process is called reconciliation.
+                <strong>Explain its working.</strong>
+                <p>
+                        So we are having two virtual doms, one virtual dom gets created at the time of mounting of react
+                        component so it is a copy of your real dom.
+                        Another virtual dom is the dom which contains the new changes, updated state variables values.
+                        Now these two virtual doms will get compared with each other and will check for the new changes,
+                        this complete procedure is known as diffing algorithm. Now the new changes will be updated in
+                        your Real dom. this procedure is known as Recoinciliation.</p>
                 
-        <strong>Explain its working.</strong>
-                
-                So we are having two virtual doms, one virtual dom gets created at the time of mounting of react component so it is a copy of your real dom.
-                Another virtual dom is the dom which contains the new changes, updated state variables values.
-                Now these two virtual doms will get compared with each other and will check for the new changes,
-                this complete procedure is known as diffing algorithm. Now the new changes will be updated in your Real dom. this procedure is known as Recoinciliation.
-<!-- 
-        <strong>Functional Components vs Class Components:</strong>
-        -->
 
-        </pre>
-        <img  src="./images/funvsclass.JPG" alt="">
+        </div>
+        <table style="width:80%">
+                <tr>
+                        <th>Functional Component</th>
+                        <th>Class Component</th>
+
+                </tr>
+                <tr>
+                        <td>A functional component is just a plain JavaScript function that accepts props as an argument
+                                and returns a React element.</td>
+                        <td>A class component requires you to extend from React. Component and create a render function
+                                which returns a React element.</td>
+                </tr>
+                <tr>
+                        <td>There is no render method used in functional components.</td>
+                        <td>It must have the render() method returning JSX (which is syntactically similar to HTML)</td>
+                </tr>
+                <tr>
+                        <td>Also known as Stateless components as they simply accept data and display them in some form
+                        </td>
+                        <td>Also known as Stateful components because they implement logic and state.</td>
+                </tr>
+                <tr>
+                        <td>React lifecycle methods (for example, componentDidMount) cannot be used in functional
+                                components.</td>
+                        <td>React lifecycle methods can be used inside class components (for example,
+                                componentDidMount).</td>
+                </tr>
+                <tr>
+                        <td>Hooks can be easily used in functional components to make them Stateful.
+
+                                example: const [name,SetName]= React.useState(‘ ‘)</td>
+                        <td>It requires different syntax inside a class component to implement hooks.
+
+                                example: constructor(props) {
+
+                                super(props);
+
+                                this.state = {name: ‘ ‘}
+
+                                }</td>
+                </tr>
+                <tr>
+                        <td>Constructors are not used.</td>
+                        <td> Constructor are used as it needs to store state.</td>
+                </tr>
+                
+        </table>
+
+        <br>
+        <br>
+        <table>
+                <tr>
+                        <th>Framework</th>
+                        <th>Library</th>
+                </tr>
+                <tr>
+                        <td>Provides ready to use tools, standards, templates, and policies for fast application development.</td>
+                        <td>Provides reusable function for our code</td>
+                </tr>
+                <tr>
+                        <td>The Framework controls calling of libraries for our code.</td>
+                        <td>Our code controls when and where to call a library.</td>
+                </tr>
+                <tr>
+                        <td>Helps us to develop a software apllication quickly.</td>
+                        <td>Helps us to reuse a software function.</td>
+                </tr>
+                <tr>
+                        <td>Intent of a framework is to reduce  the complexity of the software development process</td>
+                        <td>Intent of a library is to provide reusable software functionality</td>
+                </tr>
+                <!-- <tr>
+                        <td></td>
+                        <td></td>
+                </tr> -->
+
+        </table>
 
 </body>
 
